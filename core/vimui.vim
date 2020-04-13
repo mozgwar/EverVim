@@ -24,7 +24,7 @@ execute 'color ' . g:evervim_color_theme
 
 " Default Font setting
 if !exists('g:evervim_font')
-    let g:evervim_font = WINDOWS() ? (NVIM() ? "Knack NF" : "Knack_NF") : "Knack Nerd Font Mono"
+    let g:evervim_font = WINDOWS() ? (NVIM() ? "Hack NF" : "Hack_NF") : "Hack Nerd Font Mono"
 endif
 if !exists('g:evervim_font_size')
     let g:evervim_font_size = WINDOWS() ? "11" : "12"

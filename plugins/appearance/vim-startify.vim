@@ -9,19 +9,19 @@ if isdirectory(expand(EverVimBundleDir("vim-startify")))
             let platform_icon = ""
             let platform_string = "macOS " . OSXVERSION() . " (Darwin " . KERNELVERSION() . ")"
         elseif BSD()
-            let platform_icon = ""
+            let platform_icon = ""
             let platform_string = BSDDistro() . " (" . KERNELVERSION() . ")"
         elseif LINUX()
             let distro = DISTRO()
-            let platform_icon = distro =~ "Arch" ? "" :
-                        \ distro =~ "CentOS" ? "" :
-                        \ distro =~ "Debian" ? "" :
-                        \ distro =~ "Fedora" ? "" :
-                        \ distro =~ "Mint" ? "" :
-                        \ distro =~ "SUSE" ? "" :
-                        \ distro =~ "Ubuntu" ? "" :
-                        \ distro =~ "Gentoo" ? "" :
-                        \ distro =~ "Elementary" ? "" :
+            let platform_icon = distro =~ "Arch" ? "" :
+                        \ distro =~ "CentOS" ? "" :
+                        \ distro =~ "Debian" ? "" :
+                        \ distro =~ "Fedora" ? "" :
+                        \ distro =~ "Mint" ? "" :
+                        \ distro =~ "SUSE" ? "" :
+                        \ distro =~ "Ubuntu" ? "" :
+                        \ distro =~ "Gentoo" ? "" :
+                        \ distro =~ "Elementary" ? "" :
                         \ ""
             let platform_string = "Linux " . "[" . DISTROVERSION() . "] (" . KERNELVERSION() . ")"
             if WSL()
