@@ -9,5 +9,5 @@ if isdirectory(expand(EverVimBundleDir("vim-markdown")))
     let g:vim_markdown_conceal = 0
     let g:vim_markdown_folding_style_pythonic = 1
 
-    nnoremap <Leader>to :Tocv<CR>
+    autocmd FileType markdown nnoremap <Leader>to :Tocv<CR>
 endif
