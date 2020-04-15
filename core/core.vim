@@ -51,15 +51,15 @@
 " Key (re)Mappings {
     source $evervim_root/core/keymap.vim
 " }
-"
+
 " Plugin Configuration {
     source $evervim_root/plugins/plugin-config.vim
 " }
-"
+
 " GUI Config {
     source $evervim_root/core/gui.vim
 " }
-"
+
 " Use post config if available {
     if filereadable(expand("~/.EverVim.vimrc.after"))
         source ~/.EverVim.vimrc.after
