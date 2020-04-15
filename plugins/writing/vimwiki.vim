@@ -1,5 +1,5 @@
 if isdirectory(expand(EverVimBundleDir("vimwiki")))
-    let g:vimwiki_folding = 'syntax'
+    " let g:vimwiki_folding = 'syntax'
     nmap <Leader>vw <Plug>VimwikiIndex
     nmap <Leader>vti <Plug>VimwikiTabIndex
     nmap <Leader>vs <Plug>VimwikiUISelect
