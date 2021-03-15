@@ -13,7 +13,7 @@ if isdirectory(expand(EverVimBundleDir("nerdtree")))
     let NERDTreeMouseMode=2
     let NERDTreeShowHidden=1
     let NERDTreeKeepTreeInNewTab=1
-    let g:NERDTreeUpdateOnWrite = 0
+    let g:NERDTreeGitStatusUpdateOnWrite = 0
     let g:nerdtree_tabs_open_on_gui_startup=0
     if !exists('g:evervim_nerdtree_tabs_sync')
         let g:nerdtree_tabs_open_on_new_tab=0
@@ -22,7 +22,7 @@ if isdirectory(expand(EverVimBundleDir("nerdtree")))
     let NERDTreeMapOpenRecursively='<C-O>'
 
     " NerdTree git integration
-    let g:NERDTreeIndicatorMapCustom = {
+    let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ "Modified"  : "±",
                 \ "Staged"    : "⊕",
                 \ "Untracked" : "⊱",
@@ -34,5 +34,5 @@ if isdirectory(expand(EverVimBundleDir("nerdtree")))
                 \ 'Ignored'   : '∅',
                 \ "Unknown"   : "?"
                 \ }
-    let g:NERDTreeShowIgnoredStatus = 1
+    let g:NERDTreeGitStatusShowIgnored = 1
 endif

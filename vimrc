@@ -10,6 +10,7 @@
 if empty($evervim_root)
     let $evervim_root = "~/.EverVim"
 endif
-
+set langmenu=en_CA
+language en_CA
 " Core Config
 source $evervim_root/core/core.vim
