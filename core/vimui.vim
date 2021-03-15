@@ -1,7 +1,7 @@
 " Vim UI
 if !exists('g:evervim_color_theme')
-    if filereadable(expand(EverVimBundleDir("vim/colors/dracula.vim")))
-        let g:evervim_color_theme = "dracula"
+    if filereadable(expand(EverVimBundleDir("nord-theme/colors/nord.vim")))
+        let g:evervim_color_theme = "nord"
     else
         silent !echo "No color theme available, falling back to desert ..."
         let g:evervim_color_theme = "desert"
@@ -9,8 +9,8 @@ if !exists('g:evervim_color_theme')
 endif
 
 if !exists('g:evervim_airline_theme')
-    " Default to dracula, "Dracula" for lightline.
-    let g:evervim_airline_theme = "dracula"
+    " Default to dracula, "Nord" for lightline.
+    let g:evervim_airline_theme = "nord"
 endif
 
 if !exists('g:evervim_light_background')
